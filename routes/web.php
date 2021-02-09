@@ -13,12 +13,13 @@
 |
 */
 
+
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
 
-Route::group(['prefix' => 'api'], function () {
+$app->group(['prefix' => 'api'], function () use ($app) {
     $router->post("/register", "AuthController@register");
 $router->post("/login", "AuthController@login");
 $router->get("/user", "UserController@index");
