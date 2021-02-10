@@ -48,7 +48,7 @@ class BarangController extends Controller
                 ];
             } else {
                 $out  = [
-                    "message" => "vailed_insert_data",
+                    "message" => "vailed_insert_data ",
                     "results" => $data,
                     "code"   => 404,
                 ];
